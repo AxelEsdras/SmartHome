@@ -1,0 +1,1013 @@
+
+#MainIndex{
+    background-color: rgb(243, 243, 243);
+    padding-top: 75px;
+
+}
+
+button:hover{
+    background-color: #009295 ;
+}
+#OrdenarHorizontal{
+    flex: 1;
+    display: flex;
+}
+
+Body{
+    margin: 0px;
+    width: 100%;
+    
+}
+
+
+
+/*HEADER*/
+header {
+    width: 100%;
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    border-top: 6px solid purple;
+    background-color: white;
+    font-style: oblique;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+    z-index: 999;
+}
+
+header h1 {
+    color: rgb(243, 160, 252);
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    margin-right: 20px;
+    width: 100px; /* Ancho */
+    height: 50px;
+}
+
+header h1 img{
+    width: auto;
+    height: 40px;
+}
+
+header button{
+    margin-right: 40px;
+    height: 40px;
+    width: 90px;
+    background-color: #44DBBD;
+    border: 0px;
+    color: white;
+}
+
+.menu {
+    padding-top: 10px;
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    font-size: x-large;
+
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px; /* Espacio entre elementos del menú */
+    align-items: center;
+}
+
+.menu a {
+    color: grey;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+
+
+
+/* Estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: grey;
+    z-index: 1;
+    font-size: x-large;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+    margin: 0;
+}
+
+.submenu a {
+    padding: 10px 20px;
+}
+
+
+/*estilos barra de busqueda*/
+#BusquedaDIV{
+    display: flex;
+    margin: 20px;
+    border-radius: 30px; /* Redondear la barra de búsqueda */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */
+    height: 90px;
+    padding: 10px;
+
+}
+
+#AlineadoBarra{
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    border: 1px solid transparent; /* Añadir borde para referencia */
+    border-radius: 30px; /* Redondear la barra de búsqueda */
+    
+}
+
+#BarraBusqueda {
+    padding: 10px;
+    border: 0.5px solid Gray;
+    border-right: 0px;
+    border-radius: 30px 0 0 30px; /* Redondear solo la esquina izquierda */
+    width: 300px;
+    height: 20px;
+    font-family: 'avenir';
+}
+
+#ButtonBusqueda {
+    background-color: #44DBBD; /* Color turquesa */
+    border: none;
+    border-radius: 0 30px 30px 0; /* Redondear solo la esquina derecha */
+    padding: 8px 15px;
+    height: 100%;
+    cursor: pointer;  
+    border: 0.5px solid Gray;
+    border-left: 0px;    
+}
+
+#ButtonBusqueda img {
+    height: 20px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    filter: invert(100%);
+}
+#ButtonBusqueda:hover{
+    background-color: #009295;
+}
+#CarritoIcono {
+    width: 29px;
+    height: 29px;    
+}
+
+#CarritoAcomodo{
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+#AcomodarHorizontales{
+    display: flex;
+}
+
+
+
+
+/*EFECTOS HEADER MENU*/
+nav a:hover{
+    color: #44DBBD;
+}
+
+/*EFECTOS HEADER MENU FIN*/
+
+
+
+/* Estilos para el menú de hamburguesa */
+.hamburguesa-btn {
+    display: none; /* Ocultar por defecto en pantallas grandes */
+}
+
+
+/*HEADER FIN*/
+
+
+
+
+
+
+/*SECCION UNO*/
+/*Tipo de letra para la seccion 1*/
+/*@font-face {
+    font-family: 'Avenir';
+    src: url('AvenirNextLight.ttf') format('truetype');
+}  SE MOVIO AL INDEX PARA QUE SE PUSIERA CORRECTAMENTE */
+
+#IndexSeccionUno{
+    height: auto;
+}
+
+#QuienesSomosSection{
+    padding-left: 850px;
+    padding-top: 170px;
+    padding-bottom: 300px;
+}
+
+#QuienesSomosSection h1{
+    font-size: 35px;
+    letter-spacing: 2px;
+    color: rgb(67, 67, 67);
+}
+
+#QuienesSomosSection p{    
+    font-size:15px;
+    color: rgb(85, 85, 85);
+}
+
+#custom-list {
+    list-style: none; /* Eliminar las viñetas predeterminadas */
+}
+
+#custom-list li::before {
+    content: ">"; /* Utilizar un > como viñeta */
+    color: #44DBBD; /* Color de la viñeta */
+    display: inline-block;
+    font-weight: 1000;
+    width: 1em; /* Ajustar el ancho para alinear correctamente */
+    margin-right: 0.5em; /* Espacio entre la viñeta y el texto */
+}
+
+#custom-list li {
+    padding-top: 30px;
+    font-family: 'Avenir';
+    color: rgb(85, 85, 85); 
+}
+
+#aparecerViñeta {
+    opacity: 0; /* Inicialmente, el elemento está oculto */
+    animation: aparecer 4s ease forwards; /* Definir la animación */
+}
+
+#aparecerViñeta2 {
+    opacity: 0; /* Inicialmente, el elemento está oculto */
+    animation: aparecer 6s ease forwards; /* Definir la animación */
+}
+
+#aparecerViñeta3 {
+    opacity: 0; /* Inicialmente, el elemento está oculto */
+    animation: aparecer 8s ease forwards; /* Definir la animación */
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0; /* Estado inicial: completamente transparente */
+    }
+    to {
+        opacity: 1; /* Estado final: completamente visible */
+    }
+}
+/*SECCION UNO Fin*/
+
+
+
+
+/*SECCION DOS*/
+
+#IndexSeccionDos{
+    background-color: white;
+    height: auto;
+    
+}
+
+#IndexSeccionDosAcomodo{
+    display: flex;
+    justify-content: space-between;
+}
+
+#IndexSeccionDosAcomodo Div{
+    flex: 1;
+    max-width: 50%;
+}
+
+    
+#IndexSeccionDosAcomodo Div:nth-child(2){
+    padding-left: 0px;
+    padding-top: 0px;
+}
+
+#TuHogarMasInteligenteSection {
+    padding-top: 100px;
+    margin-left: 300px;
+    padding-bottom: 100px;
+}
+
+#TuHogarMasInteligenteSection h1{
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: rgb(67, 67, 67);
+}
+
+#TuHogarMasInteligenteSection p{
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(67, 67, 67);
+}
+
+#TuHogarMasInteligenteSection p:nth-child(3){
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgb(67, 67, 67);
+    text-decoration: underline 1px rgb(67, 67, 67) ;
+}
+
+#TuHogarMasInteligenteSection button{
+    margin-right: 40px;
+    height: 40px;
+    width: 90px;
+    background-color: #44DBBD;
+    border: 0px;
+    color: white;
+}
+
+#TuHogarMasInteligenteSection button:hover{
+    background-color: #009295;
+}
+
+/*SECCION DOS Fin*/
+
+
+
+
+/*SECCION TRES*/
+#IndexSeccionTres{
+    background-color: white;
+    height: auto;
+}
+
+#IndexSeccionTresAcomodo{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.IconoInformacionTexto{
+    font-family: Helvetica;
+    color: rgb(67, 67, 67);
+    text-align: center;
+    margin-right: 90px;
+    width: 240px;
+}
+
+
+
+.IconoInformacionTexto:last-child{
+    margin-right: 0px;
+}
+
+.IconoInformacionTexto img{
+    height: 90px;
+    width: 90px;
+}
+/*SECCION TRES Fin*/
+
+
+
+/*SECCION CUATRO*/
+#IndexSeccionCuatro{
+    height: auto;
+    text-align: center;
+    background-color: white;
+}
+
+#IndexSeccionCuatro h1{
+    padding-top: 250px;
+    font-size: 70px;
+    font-family: 'Avenir';
+    color: rgb(136, 136, 136);
+}
+
+#IndexSeccionCuatro p{
+    padding-top: 10px;
+    padding-bottom: 250px;
+    font-family: 'Avenir';
+    color: rgb(136, 136, 136);
+    font-style: italic;
+}
+
+
+/*SECCION CUATRO Fin*/
+
+
+/*SECCION PRODUCTOS*/
+
+#IndexSeccionProductos{
+    background-color: rgb(243, 243, 243);
+}
+
+#TarjetaProducto{    
+    width: 400px;
+    height: 600px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Agregar sombra */ ;
+    padding-inline: 30px;
+    background-color: white;        
+    cursor: pointer;
+    font-family: 'avenir';
+}
+
+#TarjetaProducto h1{
+    text-align: left;
+    color: black;
+    width: 100%;
+    height: 90px;
+    text-align: justify;
+    
+}
+
+#TarjetaProducto:hover h1{
+    text-decoration: underline black;
+    color: #009295;
+}
+
+
+#TarjetaProducto p{
+    text-align: end;
+    margin-top: 30px;
+    font-size:large;
+}
+
+
+#TarjetaProducto img{
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+/*SECCION PRODUCTOS Fin*/
+
+/*SECCION CINCO*/
+
+#IndexSeccionCinco{
+    width: 100%;
+    height: 700px;
+    margin-top: 50px;
+}
+
+#IndexSeccionCinco h1{
+    font-size: 45px;
+    color: rgb(49, 48, 48);
+    margin-bottom: 0px;
+}
+
+#IndexSeccionCinco button{
+    background-color: #44DBBD;
+    color: white;
+    height: 35px;
+    width: 120px;
+    border: 0px;
+}
+
+#IndexSeccionCinco button:hover{
+    background-color: #009295;
+}
+
+
+#IndexSeccionCincoTextoBtn{
+    padding-top: 100px;
+    padding-left: 300px;
+}
+
+
+/*SECCION CINCO Fin*/
+
+/*FOOTER*/
+footer{
+    background-color: #F3F3F3;
+    height: 700px;
+    width: 100%;
+    justify-content: space-between;
+     
+}
+
+
+#FooterDivUno p{
+    color: #2F2E2E;
+    font-family: 'Avenir';
+    text-decoration: underline 1px #2F2E2E;
+    cursor: pointer;
+}
+
+#FooterDivUno p:hover{
+    color: #009295;
+    text-decoration: underline black;
+}
+
+
+#FooterDivUno a{
+    text-decoration: none;
+}
+
+#FooterDivUno p:nth-child(5){
+    color: #9F9F9E;
+    margin-top: 20px;
+    font-size: 10px;
+    text-decoration: none;
+    
+}
+
+.FooterDivAcomodo{
+    padding-top: 150px;
+    justify-content: center;
+}
+
+#FooterDivDos p{ 
+    font-family: 'Avenir';
+    color: #605E5E;
+}
+
+#FooterDivDos p:first-child{ 
+    color: #2F2E2E;
+    font-size: 20px;
+}
+
+#FooterDivDos ul{
+    font-family: 'Avenir';
+    color: #605E5E;
+}
+
+#FooterDivTres p{
+    font-family: 'Avenir';
+    color: #605E5E;
+}
+
+#FooterDivTres p:first-child{
+    color: #2F2E2E;
+    font-size: 20px;
+}
+
+#FooterCorreoElectronicoBarra{
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 300px;
+    height: 35px;
+    border: 0;
+    background-color: #E0E0E0;
+
+}
+
+footer button{
+    background-color: #44DBBD;
+    border: 0;
+    color: white;
+    margin-left: 20px;
+    margin-top: 5px;
+    width: 305px;
+    height: 35px;
+
+}
+
+/*FOOTER Fin*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+||||          ||||   ||||||||||     |||||||||||     ||||||||||||    ||||||||||||    ||||       ||||             
+|||||||    |||||||  ||||    ||||    ||||    ||||        ||||            ||||        ||||||     ||||            
+|||| |||||||| ||||  ||||    ||||    ||||    ||||        ||||            ||||        |||| ||    ||||            
+||||   ||||   ||||  ||||    ||||    ||||||||||||        ||||            ||||        ||||  ||   ||||            
+||||          ||||  ||||||||||||    ||||  ||||          ||||            ||||        ||||   ||  ||||        
+||||          ||||  ||||    ||||    ||||   ||||         ||||            ||||        ||||    || ||||         
+||||          ||||  ||||    ||||    ||||    ||||        ||||            ||||        ||||     ||||||          
+||||          ||||  ||||    ||||    ||||     ||||       ||||        ||||||||||||    ||||      |||||             
+
+
+
+                ||||                ||||
+                ||||                ||||
+                ||||                ||||
+                ||||                ||||            
+            ||||||||||||        ||||||||||||                
+             ||||||||||          ||||||||||   
+              ||||||||            ||||||||  
+               ||||||              ||||||
+                ||||                ||||
+                 ||                  ||
+*/
+
+
+
+
+
+
+/*ESTILOS CATALOGO */
+
+/*Agregado por Proa*/
+.divImagenCatalogo{
+    height: 300px;
+}
+/*FIN Agregado por Proa*/
+
+/* Estilos para los productos */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'avenir';
+    text-align: center;
+}
+
+.product-box {
+    padding: 20px;
+    margin-bottom: 50px;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    box-sizing:content-box ;
+    border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    position: relative;    
+}
+
+.product-box img {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 10px;
+    
+}
+
+.product-box h3 {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: large ;    
+}
+
+.product-box:hover h3{
+    color: #009295;
+    text-decoration: underline black;
+}
+
+.product-box p {
+    text-align: end;
+    font-size: 14px;
+    margin: 5px 0;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+/* Estilos para el botón desplegable */
+.Filtros {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: rgb(100, 209, 174);
+    color: black;
+    border: 1px solid black;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 120px;
+    margin-left: 25px;  
+    margin-top: 20px;   
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #009295;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*ESTILOS CATALOGO */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+
+||||          ||||   ||||||||||     |||||||||||     ||||||||||||    ||||||||||||    ||||       ||||             
+|||||||    |||||||  ||||    ||||    ||||    ||||        ||||            ||||        ||||||     ||||            
+|||| |||||||| ||||  ||||    ||||    ||||    ||||        ||||            ||||        |||| ||    ||||            
+||||   ||||   ||||  ||||    ||||    ||||||||||||        ||||            ||||        ||||  ||   ||||            
+||||          ||||  ||||||||||||    ||||  ||||          ||||            ||||        ||||   ||  ||||        
+||||          ||||  ||||    ||||    ||||   ||||         ||||            ||||        ||||    || ||||         
+||||          ||||  ||||    ||||    ||||    ||||        ||||            ||||        ||||     ||||||          
+||||          ||||  ||||    ||||    ||||     ||||       ||||        ||||||||||||    ||||      |||||  
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cookie-notice {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color:#2F2E2E;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5); /*Hor Ver Dif*/
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 9999;    
+}
+
+
+
+.cookie-notice p {
+    margin: 0px  40px 15px 40px;
+    color: #fff;
+    font-size: medium;
+    font-family: 'avenir';
+}
+
+.cookie-notice button {
+    background-color: #44DBBD;
+    color: #fff;
+    border: none;
+    padding: 10px 30px  ;
+    font-size: 16px;
+    cursor: pointer; 
+    margin-right: 30px; 
+    border-radius: 10px;  
+    height: 50px;
+}
+
+.cookie-notice button:hover {
+    background-color: #009295;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+|||     ||| ||||||| ||||||  |||||||||   |||||||||   |||||||||
+||||| ||||| |||     ||| |||    |||      |||   |||   |||
+||| ||| ||| |||||   |||  ||    |||      |||||||||   |||  
+|||     ||| |||     ||| |||    |||      |||   |||   |||
+|||     ||| ||||||| ||||||  |||||||||   |||   |||   ||||||||
+*/
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    #MainIndex{
+        background-color: #fff;
+    }
+    .hamburguesa-btn {
+        display: initial;
+        font-size: x-large;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px; /* Espacio entre el botón de hamburguesa y el menú */
+        right: 0;
+        background-color: white;
+        padding: 10px;
+        border: 1px solid #ccc; /* Borde del menú */
+        border-radius: 5px;
+    }
+
+    .menu.open {
+        display: block;
+        flex-direction: column; /* Apilar elementos verticalmente */
+    }
+
+    .menu ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        display: block;
+        padding: 10px 20px;
+        color: grey;
+        text-decoration: none;
+    }
+
+    #AcomodarHorizontales{
+        display:table ;
+        z-index: inherit;
+    }
+
+    #QuienesSomosSection {
+        display: initial;
+        background-color:#fff;
+        height: 100%;
+    }
+    #custom-list li {
+        padding-top: 30px;
+        font-family: 'Avenir';
+        color: rgb(85, 85, 85);
+        background-color:#fff;
+    }
+    #IndexSeccionDosAcomodo{
+        background-color: fff;
+        display: initial;
+    }
+    #TuHogarMasInteligenteSection {
+        margin-left: 0px;
+        padding-top: 100px;
+    }
+    #IndexSeccionDosAcomodo Div{
+        width: auto;    
+        margin-left: 50px ;
+    }
+   
+    #IndexSeccionDosAcomodo Div:nth-child(2){
+        display: none;
+    }
+
+    #FooterDivTres{
+        display:none;
+    }
+
+    .divImagenCatalogo{
+        height: 220px;
+    }
+    
+    .product-box{
+        width: calc(50% - 20px);
+    }
+
+    .cookie-notice {
+        height: 50%;
+    }
+    
+    .cookie-notice button {
+        height: 50px;
+    }
+
+    #TarjetaProducto p{
+        text-align: center;
+        margin-top: 90px;
+        
+    }
+    
+}
+
+.submenu2 {
+    display: none;
+    position: absolute;
+    background-color: white;
+    color: grey;
+    z-index: 1;
+    font-size: large;
+}
+
+.dropdown:hover .submenu2 {
+    display: block;
+}
+
+.submenu2 li {
+    display: block;
+    margin: 0;
+    margin-top: 10px;
+}
+.submenu2 li:hover {
+    background-color: #30313165;
+}
+
+.submenu2 a {
+    padding: 10px 20px;
+}
+
+ /* Estilos para el resultado de búsqueda */
+ #resultados {
+    list-style-type: none;
+    padding: 0;
+    width: 300px; 
+}
+#resultados li {
+    display: flex; 
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+}
+#resultados img {
+    width: 20px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+
+#resultadoss li{
+    color: #000;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-content:start;
+    font-size: large;
+    text-align: end;
+
+}
+#resultadoss li:hover{
+    background-color: #E0E0E0;
+}
